@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Website dengan Frameset</title>
+</head>
+
+    <frameset rows="15%, 25%, 70%, 13%" border="2">
+        <!-- Header -->
+        <frame src="header.html" name="header" scrolling="no" noresize>
+    
+        <!-- Navigasi -->
+        <frame src="nav.html" name="navigation" scrolling="no" noresize>
+    
+        <!-- Area Konten Utama (dibagi menjadi 3 kolom) -->
+        <frameset cols="20%, 60%, 20%">
+            <frame src="left.html" name="left_content" scrolling="auto">
+            <frame src="home.html" name="main_content" scrolling="auto">
+            <frame src="right.html" name="right_content" scrolling="auto">
+        </frameset>
+    
+        <!-- Footer -->
+        <frame src="footer.html" name="footer" scrolling="no" noresize>
+    </frameset>
+
+</html>
